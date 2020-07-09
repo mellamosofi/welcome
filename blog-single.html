@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 메가박스 </title>
+    <link href="css/style_megabox.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function() {
+            $('.bxslider').bxSlider({
+                captions: true,
+                //slideWidth:600,  //수정
+                auto: true,
+                autoControls: true,
+                stopAutoOnclick: true,
+
+            });
+
+            var mySlider = $("#slide_banner").bxSlider({
+                mode: "horizontal", // 가로 수평으로 슬라이드 됩니다.
+                speed: 500, // 이동 속도를 설정합니다.
+                pager: false, // 현재 위치 페이징 표시 여부 설정.
+                moveSlides: 1, // 슬라이드 이동시 갯수 설정.
+                slideWidth: 500, // 슬라이드 마다 너비 설정.
+                minSlides: 3, // 최소 노출 개수를 설정합니다.
+                maxSlides: 3, // 최대 노출 개수를 설정합니다.
+                slideMargin: 10, // 슬라이드간의 간격을 설정합니다.
+                auto: true, // 자동으로 흐를지 설정합니다.
+                autoHover: true, // 마우스 오버시 정시킬지 설정합니다.
+                controls: false // 이전 다음 버튼 노출 여부 설정합니다.
+            });
+            //이전 버튼을 클릭하면 이전 슬라이드로 전환됩니다.
+            $("#prevBtn").on("click", function() {
+                mySlider.goToPrevSlide(); //이전 슬라이드 배너로 이동됩니다.
+                return false; //<a>에 링크를 차단합니다.
+            });
+            //다음 버튼을 클릭하면 다음 슬라이드로 전환됩니다.
+            $("#nextBtn").on("click", function() {
+                mySlider.goToNextSlide(); //다음 슬라이드 배너로 이동됩니다.
+                return false;
+            });
+            
+           $('.color_icon').animate({top:500})
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="img_both">
+                <div class="img_left">
+                    <img src="images/bg_left.jpg" alt="왼쪽 배경막">
+                </div>
+                <div class="img_right">
+                    <img src="images/bg_right.jpg" alt="오른쪽 배경막">
+                </div>
+                <div class="space"></div>
+            </div>
+            <div class="inner">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.jpg" alt="로고"></a>
+                </div>
+                <ul class="menu">
+                    <li> <a href="#"> VIP Lounge </a> </li>
+                    <li> <a href="#"> 멤버십 </a> </li>
+                    <li> <a href="#"> 고객센터 </a> </li>
+                    <li> <a href="#"> 로그인 </a> </li>
+                    <li> <a href="#"> 회원가입</a> </li>
+                    <li> <a href="#"> 빠른예매</a> </li>
+                    <li class="space"></li>
+                </ul>
+                <div class="below_all">
+                    <ul class="below_menu">
+                        <div>
+                            <li> <a href="#">영화</a>
+                                <ul class="sub">
+                                    <li> <a href="#">전체영화</a> </li>
+                                    <li> <a href="#">큐레이션</a> </li>
+                                    <li> <a href="#">무비포스트</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">예매</a>
+                                <ul class="sub">
+                                    <li> <a href="#">빠른예매</a> </li>
+                                    <li> <a href="#">상영시간표</a> </li>
+                                    <li> <a href="#">할인안내</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">극장</a>
+                                <ul class="sub">
+                                    <li> <a href="#">전체극장</a> </li>
+                                    <li> <a href="#">특별관</a> </li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li> <a href="#">이벤트</a>
+                                <ul class="sub">
+                                    <li> <a href="#">진행중 이벤트</a> </li>
+                                    <li> <a href="#">지난 이벤트</a> </li>
+                                    <li> <a href="#">당첨자발표</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">스토어</a> </li>
+                            <li> <a href="#">혜택</a>
+                                <ul class="sub">
+                                    <li> <a href="#">메가박스 멤버십</a> </li>
+                                    <li> <a href="#">제휴/할인</a> </li>
+                                </ul>
+                            </li>
+                            <li class="space"></li>
+                        </div>
+                    </ul>
+                    <div class="below_icon">
+                        <div class="below_left">
+                            <a href="#"><img src="images/menu_icon1.jpg" alt="상단 왼쪽 아래메뉴 아이콘"></a>
+                        </div>
+                        <div class="below_right">
+                            <a href="#"><img src="images/menu_icon2.jpg" alt="상단 오른쪽 아래메뉴 아이콘"></a>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="color"></div>
+            <div class="inner">
+                <div class="text">
+                    <p> <a href="#">영화명을 입력해주세요</a> <span> <a href="#"><img src="images/plus.png" alt="메인돋보기"></a> </span> </p>
+                    <h3> <a href="#">상영시간표</a> <br> <a href="#">박스오피스</a> <br> <a href="#">빠른예매</a> </h3>
+                    <div class="border" style=" cursor: pointer;" onclick="location.href='#';"> <span><a href="#"> 더 많은 영화보기</a></span> <span> <a href="#">+</a> </span> </div>
+                </div>
+                <div class="box_office">
+                    <p> <a href="#">박스오피스</a> </p>
+                    <div class="poster_set">
+                        <div class="poster">
+                            <a href="#"><img src="images/poster1.jpg" alt="라라랜드"></a>
+                            <div class="number" style=" cursor: pointer;" onclick="location.href='#';"> <span> <a href="#"><img src="images/love.png" alt="하트"></a> </span> <a href="#">913</a> </div>
+                            <div class="white_box" style=" cursor: pointer;" onclick="location.href='#';"> <a href="#">예매</a> </div>
+                        </div>
+                        <div class="poster">
+                            <a href="#"><img src="images/poster2.jpg" alt="2번포스터"></a>
+                            <div class="number" style=" cursor: pointer;" onclick="location.href='#';"> <span> <a href="#"><img src="images/love.png" alt="하트"></a> </span> <a href="#">583</a> </div>
+                            <div class="white_box" style=" cursor: pointer;" onclick="location.href='#';"> <a href="#">예매</a> </div>
+                        </div>
+                        <div class="poster">
+                            <a href="#"><img src="images/poster3.jpg" alt="3번포스터"></a>
+                            <div class="number" style=" cursor: pointer;" onclick="location.href='#';"> <span> <a href="#"><img src="images/love.png" alt="하트"></a> </span> <a href="#">458</a> </div>
+                            <div class="white_box" style=" cursor: pointer;" onclick="location.href='#';"> <a href="#">예매</a> </div>
+                        </div>
+                        <div class="poster">
+                            <a href="#"><img src="images/poster4.jpg" alt="4번포스터"></a>
+                            <div class="number" style=" cursor: pointer;" onclick="location.href='#';"> <span> <a href="#"><img src="images/love.png" alt="하트"></a> </span> <a href="#">1.2k</a> </div>
+                            <div class="white_box" style=" cursor: pointer;" onclick="location.href='#';"> <a href="#">예매</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="event">
+            <div class="inner">
+                <div class="line_left"></div>
+                <div class="line_right"></div>
+                <h4> EVENT! </h4>
+                <p class="pp"> 진행중인 이벤트 </p>
+                <div class="event">
+                    <div class="btn">
+                        <div class="btn_left">
+                            <a href="#"><img src="images/event_prev.jpg" alt="왼쪽화살표"></a>
+                        </div>
+                        <div class="btn_right">
+                            <a href="#"><img src="images/event_next.jpg" alt="오른쪽화살표"></a>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="box_set">
+                        <div class="box">
+                            <a href="#"><img src="images/event_box1.jpg" alt="이벤트박스1"></a>
+                        </div>
+                        <div class="box">
+                            <a href="#"><img src="images/event_box2.jpg" alt="이벤트박스2"></a>
+                        </div>
+                        <div class="box">
+                            <a href="#"><img src="images/event_box3.jpg" alt="이벤트박스3"></a>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                    <div class="additional_box">
+                        <a href="#"><img src="images/event_box4.jpg" alt="이벤트하단박스"></a>
+                    </div>
+                </div>
+                <div class="circle">
+                    <div class="dark_circle" style=" cursor: pointer;" onclick="location.href='#';"></div>
+                    <div class="white_circle" style=" cursor: pointer;" onclick="location.href='#';"></div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div>
+        <div id="membership">
+
+            <div class="bxslider">
+                <div>
+                    <img src="images/membership_bg.jpg" alt="배경">
+                    <div class="inner">
+                        <div class="m_text">
+                            <h2> MEGABOX MEMBERSHIP </h2>
+                            <p> 메가박스 멤버십 회원에게만 <br> 제공되는 다양한 혜택 </p>
+                        </div>
+                        <div class="m_icon">
+                            <div class="icon">
+                                <img src="images/icon1.png" alt="아이콘1">
+                                <p> 포인트 적립 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon2.png" alt="아이콘2">
+                                <p> 포인트 선물 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon3.png" alt="아이콘3">
+                                <p> 포인트 사용 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon4.png" alt="아이콘4">
+                                <p> 생일축하 쿠폰 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon5.png" alt="아이콘5">
+                                <p> VIP LOUNGE </p>
+                            </div>
+                            <div class="space"></div>
+                        </div>
+                        <div class="space"></div>
+                    </div> <!-- inner -->
+                </div>
+
+                <div>
+                    <img src="images/membership_bg.jpg" alt="배경">
+                    <div class="inner">
+                        <div class="m_text">
+                            <h2> MEGABOX MEMBERSHIP </h2>
+                            <p> 메가박스 멤버십 회원에게만 <br> 제공되는 다양한 혜택 </p>
+                        </div>
+                        <div class="m_icon">
+                            <div class="icon">
+                                <img src="images/icon1.png" alt="아이콘1">
+                                <p> 포인트 적립 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon2.png" alt="아이콘2">
+                                <p> 포인트 선물 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon3.png" alt="아이콘3">
+                                <p> 포인트 사용 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon4.png" alt="아이콘4">
+                                <p> 생일축하 쿠폰 </p>
+                            </div>
+                            <div class="icon">
+                                <img src="images/icon5.png" alt="아이콘5">
+                                <p> VIP LOUNGE </p>
+                            </div>
+                            <div class="space"></div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div>
+
+            </div> <!-- bxslider -->
+
+
+        </div>
+        <!--membership  -->
+
+        <div id="upcoming">
+            <div class="up_color">
+                <div class="inner">
+                    <h6> 상영 예정작 </h6>
+
+
+                    <div id="banner_wrap">
+
+                        <ul id="slide_banner">
+                            <li>
+                                <a href="#"><img src="images/up1.jpg" alt="예정작1"></a>
+                                <div class="blue12">
+                                    <img src="images/age.jpg" alt="12세">
+                                    <span> 라라랜드 </span>
+                                </div>
+                                <p> 예매율 59% | 개봉일 2020.03.25 </p>
+
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/up2.jpg" alt="예정작2"></a>
+                                <div class="blue12">
+                                    <img src="images/age.jpg" alt="12세">
+                                    <span> 주디 </span>
+                                </div>
+                                <p> 예매율 4.6% | 개봉일 2020.03.25 </p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/up3.jpg" alt="예정작3"></a>
+                                <div class="blue12">
+                                    <img src="images/age.jpg" alt="12세">
+                                    <span> 페임 </span>
+                                </div>
+                                <p> 예매율 2.3% | 개봉일 2020.03.25 </p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/up1.jpg" alt="예정작1"></a>
+                                <div class="blue12">
+                                    <img src="images/age.jpg" alt="12세">
+                                    <span> 라라랜드 </span>
+                                </div>
+                                <p> 예매율 59% | 개봉일 2020.03.25 </p>
+                            </li>
+
+                        </ul>
+                             <p><a href="#" id="prevBtn"><img src="images/png_prev.png" alt="왼쪽화살표"></a></p>
+      <p><a href="#" id="nextBtn"><img src="images/png_next.png" alt="오른쪽화살표"></a></p>
+                    </div>
+                    <!-- <div class="up_set">
+                        <div class="up">
+
+                        </div>
+                        <div class="up">
+
+                        </div>
+                        <div class="up">
+
+                        </div>
+                        <div class="space"></div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="ticketing">
+        <div class="inner">
+            <h5> 예매 </h5>
+            <div class="color_icon">
+                <div class="c_icon">
+                    <a href="#"><img src="images/color1.jpg" alt="조조"></a>
+                    <span> <a href="#">조조</a> </span>
+                </div>
+                <div class="c_icon">
+                    <a href="#"><img src="images/color2.jpg" alt="브런치"></a>
+                    <span> <a href="#">브런치</a> </span>
+                </div>
+                <div class="c_icon">
+                    <a href="#"><img src="images/color3.jpg" alt="심야"></a>
+                    <span> <a href="#">심야</a> </span>
+                </div>
+                <div class="c_icon">
+                    <a href="#"><img src="images/color4.jpg" alt="할인"></a>
+                    <span> <a href="#">할인</a> </span>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+    <div id="life">
+
+        <div class="inner">
+            <div class="life_text">
+                <h1> LIFE THEATER </h1>
+                <p> 영화보다 멋진 당신의 일상을 위하여 안목 있는 <br> 콘텐트와 라이프스타일을 제안합니다. <br> <br> <span> 라이프시어터, 메가박스 </span></p>
+            </div>
+
+        </div>
+        <div class="notice">
+            <a href="#">
+                <p> 공지사항 <span> 함께 이겨내요, 코로나! </span> </p>
+            </a>
+            <p> <a href="#">2020-03-27</a> </p>
+            <p> <a href="#">MORE</a> </p>
+            <div class="space"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="inner">
+            <ul class="text_top">
+                <li> <a href="#">회사소개</a> </li>
+                <li> <a href="#">인재채용</a> </li>
+                <li> <a href="#">사회공헌</a> </li>
+                <li> <a href="#">제휴/광고/부대사업문의</a> </li>
+                <li> <a href="#">이용약관</a> </li>
+                <li> <a href="#">개인정보처리방침</a> </li>
+                <li> <a href="#">윤리경영</a> </li>
+                <li class="space"></li>
+            </ul>
+            <div class="text_bottom">
+                <div class="footer_logo">
+                    <img src="images/footer_logo.png" alt="푸터로고">
+                </div>
+                <p> 서울특별시 성동구 왕십리로 50,6층(성수동 1가,메가박스스퀘어) ARS 1544-0070 <br> 대표자명 김진선ㆍ개인정보보호책임자 조상연ㆍ사업자등록번호 211-86-59478ㆍ통신판매업신고번호 제833호 <br> COPYRIGHT ⓒ MegaboxJoongAng,Inc. ALL rights reserved </p>
+                <div class="space"></div>
+            </div>
+            <div class="search" style=" cursor: pointer;" onclick="location.href='#';">
+                <img src="images/footer_scale.png" alr="푸터돋보기">
+                <p> 극장찾기 </p>
+            </div>
+            <div class="sns_icon">
+                <div class="sns">
+                    <a href="#"><img src="images/sns1.png" alr="트위터"></a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/sns2.png" alr="페이스북"></a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/sns3.png" alr="인스타그램"></a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/sns4.png" alr="구글"></a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/sns5.png" alr="애플"></a>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+</body></html>

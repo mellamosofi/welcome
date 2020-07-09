@@ -1,0 +1,171 @@
+@font-face {font-family: 'NotoSansCJKkr-Bold';
+src: url("font/NotoSansCJKkr-Bold.otf") format('opentype')}
+
+@font-face {font-family: 'NotoSansCJKkr-Medium';
+src: url("font/NotoSansCJKkr-Medium.otf") format('opentype')}
+
+@font-face {font-family: 'NotoSansCJKkr-Regular';
+src: url("font/NotoSansCJKkr-Regular.otf") format('opentype')}
+
+@font-face {font-family: 'NotoSansCJKkr-Black';
+src: url("font/NotoSansCJKkr-Black.otf") format('opentype')}
+
+
+
+*{padding: 0; margin: 0}
+ul{list-style: none}
+body{overflow-x: hidden}
+a{text-decoration: none}
+.space{clear: both}
+
+
+
+
+.img_left{float: left}
+.img_right{float: right}
+.inner{width: 1282px; height: 100%; margin: 0 auto; position: relative}
+.logo{width: 244px; height: 136px; margin: 0 auto; margin-top: -65px}
+.menu{float: right; width: 100%; height: 13px; font-size: 14px; color: white; font-family: NotoSansCJKkr-Bold; margin-top: -120px}
+
+.menu li a:hover{text-decoration: underline}
+.menu li a{color: #fff}
+.below_menu li a{color: #050505}
+.below_all>ul>li>a:hover{text-decoration: underline}
+.menu li{float: left; padding-left: 40px}
+.menu li:nth-child(3){padding-right: 765px}
+.menu li:nth-child(1){padding-left: 5px}
+.below_all{width: 100%; height: 75px}
+.below_menu{width: 1046px; height: 100%; float: right; font-size: 20px; color: #050505; font-family: NotoSansCJKkr-Bold; margin: 0 auto; position: absolute; top: 87px; right: 10px; left: 50px}
+.below_menu>div:nth-child(1){float: left; margin-left: -30px}
+.below_menu>div:nth-child(2){float: right; margin-right: -30px}
+
+.below_menu li{float: left; padding-left: 60px}
+.below_menu li:nth-child(4){margin-left: 245px}
+.below_menu li:nth-child(1){padding-left: 0px}
+.below_icon{float: left; margin-top: -125px; padding-left: 4px; position: absolute; top: 205px}
+.below_left{float: left}
+.below_right{float: right; margin-left: 1140px}
+.below_menu{margin-top: -10px}
+.below_menu>div>li{width: 100px; height: 30px; float: left; padding: 6px 0; text-align: center; position: relative; z-index: 999}
+        .sub{position: absolute; top: 42px; background-color: rgba(0,0,0,0.3); opacity: 0; transition: all 0.5s}
+        .sub>li{width: 130px; height: 30px; padding: 6px 0; transition: all 0.5s}
+        .below_menu>div>li:hover{background-color: #855a99}
+        
+        .below_menu>div>li:hover .sub{opacity: 1}
+        .sub>li:hover{background-color: #a387c4}
+        .below_menu>div a:hover{color: #fff}
+
+.sub li{font-size: 17px}
+
+
+
+
+
+
+
+.color{width: 1920px; height: 572px; background-color: #855a99; margin-top: -75px; position: relative}
+.text{position: absolute; top: -439px; color: white}
+.text p{font-size: 14.06px; font-family: NotoSansCJKkr-Medium; border-bottom: 1px solid white; width: 168px}
+.text p span{position: absolute; bottom: 302px; left: 145px}
+.text h3{font-size: 34.73px; font-family: NotoSansCJKkr-Medium; line-height: 70px; padding-bottom: 20px; padding-top: 30px}
+.border{border: 1px solid white; width: 188px; height: 43px}
+.border span:nth-child(1){ font-size: 14.06px; font-family: NotoSansCJKkr-Bold; line-height: 43px; padding-left: 35px}
+.border span:nth-child(2){font-size: 25.3px; font-family: NotoSansCJKkr-Regular; padding-left: 15px; position: absolute; bottom: 5px}
+.box_office{float: right; margin-top: -465px}
+.box_office p{color: white; font-size: 20.6px; font-family: NotoSansCJKkr-Bold; border-bottom: 1px solid white; width: 98px; margin: 0 auto; margin-top: -30px}
+.poster_set{float: right; padding-top: 23px}
+.poster{float: left; padding-left: 38px}
+.poster:nth-child(1){padding-left: 0}
+.number{width: 72px; height: 29px; border-radius: 11px; border: 1px solid white; text-align: center; padding-top: 3px; color: white; font-size: 16.02px; font-family: NotoSansCJKkr-Medium; margin-left: 4px}
+.white_box{border-radius: 11px; background-color: white; width: 120px; height: 31px; float: right; margin-top: -33px; text-align: center; padding-top: 3px; font-size: 16.02px; font-family: NotoSansCJKkr-Medium; color: #2e2e2e; margin-right: 4px}
+
+.text a, .box_office p a, .number a{color: white}
+.white_box a{color: #2e2e2e}
+
+
+.line_left{border-bottom: 1px solid #686868; width: 500px; float: left; padding-top: 100px}
+.line_left{border-bottom: 1px solid #686868; width: 500px; float: left; padding-top: 100px}
+.line_right{border-bottom: 1px solid #686868; width: 500px; float: right; padding-top: 100px}
+.inner h4{text-align: center; font-size: 38px; font-family: NotoSansCJKkr-Medium; color: #292929; padding-top: 75px}
+.pp{font-size: 20px; font-family: NotoSansCJKkr-Medium; color: #050505; text-align: center; line-height: 180px}
+.event{width: 100%; height: 686px; margin: 0 auto}
+.btn{float: left; padding-top: 170px}
+.btn_left{float: left; padding-left: 10px}
+.btn_right{float: right; padding-left: 1150px}
+.box_set{float: left; width: 1059px; height: 485px; padding-left: 110px; margin-top: -280px; padding-bottom: 70px}
+.box{float: left; padding-left: 56px}
+.box:nth-child(1){padding-left: 0}
+.additional_box{width: 100%}
+.circle{width: 65px; height: 23px; margin: 0 auto; padding-bottom: 10px}
+.dark_circle{border-radius: 20px; background-color: #292929; width: 20px; height: 20px; border: 1px solid #707070}
+.white_circle{border-radius: 20px; width: 20px; height: 20px; background-color: white; border: 1px solid #707070; float: right; margin-top: -22px}
+
+.background_image{position: relative; padding-top: 120px}
+.m_text{position: absolute; bottom: 150px}
+.m_text h2{color: #3c0657; font-size: 43.42px; font-family: NotoSansCJKkr-Bold; padding-bottom: 10px}
+.m_text p{color: #0a0a0a; font-size: 25.09px; font-family: NotoSansCJKkr-Medium}
+.m_icon{position: absolute; left: 700px; bottom: 180px}
+.icon{float: left; padding-left: 27px}
+.icon p{color: #2b1d1b; font-size: 16.3px; font-family: NotoSansCJKkr-Bold}
+
+.up_color{width: 100%; height: 808px; background-color: #f26d3b; margin-top: -4px}
+.inner h6{color: #0a0a0a; font-size: 38px; font-family: NotoSansCJKkr-Bold; text-align: center; padding-top: 85px; padding-bottom: 35px}
+.up_btn{padding-top: 202px}
+.up_left{float: left}
+.up_right{float: right}
+.up_set{width: 965px; height: 500px; margin: 0 auto; position: relative}
+.up{float: left; padding-left: 86px; text-align: center; margin-top: -230px}
+.up:nth-child(1){padding-left: 0px}
+.blue12{color: #0a0a0a; font-size: 29.67px; font-family: NotoSansCJKkr-Regular; padding-right: 213px; margin-top: -10px}
+.blue12 span{position: absolute;bottom: 0}
+.up p{color: #0a0a0a; font-size: 18.2px; font-family: NotoSansCJKkr-Medium; padding-top: 12px}
+.up img{padding-bottom: 20px}
+#ticketing{width: 100%; height: 440px}
+.inner h5{color: #0a0a0a; font-size: 38px; font-family: NotoSansCJKkr-Bold; text-align: center; padding-bottom: 50px; padding-top: 103px}
+.color_icon{float: left; padding-left: 240px; padding-bottom: 23px}
+.c_icon{color: #0a0a0a; font-size: 26.84px; font-family: NotoSansCJKkr-Bold; float: left; padding-left: 140px}
+.c_icon:nth-child(1){padding-left: 0px}
+.c_icon:nth-child(2) span{margin-left: -99px}
+.c_icon img{padding-bottom: 32px; padding-top: 45px}
+.c_icon span{margin-left: -88px}
+.c_icon span a{color: #0a0a0a}
+#life .inner{width: 100%;height: 392px; background-image: url(../images/bora.png); background-repeat: no-repeat; background-position: center center; background-size: cover}
+.life_text{position: absolute; text-align: center; top:25%; left: 35%; right: 35%; margin: 0 auto}
+.life_text h1{color: #131212; font-size: 45.02px; font-family: NotoSansCJKkr-Black}
+.life_text p{color: #2e2a2a; font-size: 20px; font-family: NotoSansCJKkr-Bold}
+.life_text span{color: #64317c; font-size: 24px; font-family: NotoSansCJKkr-Bold}
+.notice{padding-top: 34px; width: 1282px; margin: 0 auto; line-height: 33px}
+.notice p{color: #3f4240; font-size: 18px; font-family: NotoSansCJKkr-Black; float: left}
+.notice span{color: #3f4240; font-size: 20px; font-family: NotoSansCJKkr-Medium; padding-left: 62px}
+.notice p:nth-child(2){color: #3f4240; font-size: 15px; font-family: NotoSansCJKkr-Regular; float: left; padding-left: 775px}
+.notice p:nth-child(2) a{color: #3f4240}
+.notice p:nth-child(3) a{color: #3f4240}
+.notice p:nth-child(3){color: #3f4240; font-size: 15.36px; font-family: NotoSansCJKkr-Bold; border-bottom: 2px solid #3f4240; width: 44px; float: right; line-height: 15px; margin-top: 8px}
+.footer{width: 100%; height: 296px; background-color: #eff3f1; margin-top: 25px}
+.text_top{float: left; color: #3f4240; font-size: 16.03px; font-family: NotoSansCJKkr-Regular; padding-top: 38px}
+.text_top a{color: #3f4240}
+.text_top li:nth-child(6){font-family: NotoSansCJKkr-Bold}
+.text_top li{float: left; padding-right: 34px}
+.text_bottom{float: left}
+.footer_logo{float: left; padding-top: 35px; padding-right: 20px}
+.text_bottom p{color: #3d3f3e; font-size: 16.17px; font-family: NotoSansCJKkr-Regular; float: right; padding-top: 62px}
+.search{float: right; border-radius: 30px; border: 1px solid #b7b7b7; width: 145px; height: 40px; text-align: center; margin-top: -30px}
+.search p{color: #3f4240; font-size: 18.15px; font-family: NotoSansCJKkr-Regular; padding-left: 25px; margin-top: -34px}
+.search>img{padding-top: 6px; padding-right: 70px}
+.sns_icon{float: right; padding-top: 64px}
+.sns{float: left; padding-left: 26px}
+
+
+
+#membership{padding-top: 118px}
+.bxslider{padding-bottom: -50px}
+#banner_wrap{position:relative; width:80%; margin:0 auto}
+#slide_banner {text-align: center}
+#slide_banner li{text-align: center; padding-left: 33px;padding-bottom:100px}
+#slide_banner li:nth-child(1){padding-left: -12px}
+#slide_banner>img{width:80%; margin: 0 auto}
+#slide_banner li .blue12>img{padding-top: 26px}
+#prevBtn{position:absolute;left:-110px;top:170px}
+#nextBtn{position:absolute;right:-110px;top:170px;}
+#slide_banner span{color: #0a0a0a; font-size: 29.67px; font-family: NotoSansCJKkr-Regular; position: absolute; top: 390px}
+#slide_banner p{color: #0a0a0a; font-size: 18.2px; font-family: NotoSansCJKkr-Medium; padding-top: 12px; margin-top: -35px; position: absolute; top: 510px}
