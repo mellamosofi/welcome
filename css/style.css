@@ -539,6 +539,15 @@ ol {
 	margin: 0;
 }
 
+.slicknav_nav ul a{
+    color: #7E858B;
+    font-size: 14px;
+}
+
+.slicknav_nav ul a:hover{
+    color: #7E858B;
+}
+
 .slicknav_nav .slicknav_row:hover {
 	border-radius: 0;
 	background: transparent;
