@@ -760,6 +760,11 @@ ol {
 	background: #8DB952;
 }
 
+.adding .bar-inner {
+	height: 100%;
+	background: #1f89c8;
+}
+
 /*-------------------
    Gallery Page
  -------------------*/

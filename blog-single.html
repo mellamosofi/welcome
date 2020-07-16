@@ -44,9 +44,12 @@
                 mySlider.goToNextSlide(); //다음 슬라이드 배너로 이동됩니다.
                 return false;
             });
-            
-           $('.color_icon').animate({top:500})
+
+            $('.color_icon').animate({
+                top: 500
+            })
         });
+
     </script>
 
 </head>
@@ -116,7 +119,7 @@
                                     <li> <a href="#">제휴/할인</a> </li>
                                 </ul>
                             </li>
-                            <li class="space"></li>
+                            <div class="space"></div>
                         </div>
                     </ul>
                     <div class="below_icon">
@@ -135,7 +138,7 @@
             <div class="color"></div>
             <div class="inner">
                 <div class="text">
-                    <p> <a href="#">영화명을 입력해주세요</a> <span> <a href="#"><img src="images/plus.png" alt="메인돋보기"></a> </span> </p>
+                    <p> <input id="input1" type="text" size="14" placeholder="영화명을 입력해주세요"><span> <a href="#"><img src="images/plus.png" alt="메인돋보기"></a> </span> </p>
                     <h3> <a href="#">상영시간표</a> <br> <a href="#">박스오피스</a> <br> <a href="#">빠른예매</a> </h3>
                     <div class="border" style=" cursor: pointer;" onclick="location.href='#';"> <span><a href="#"> 더 많은 영화보기</a></span> <span> <a href="#">+</a> </span> </div>
                 </div>
@@ -326,8 +329,8 @@
                             </li>
 
                         </ul>
-                             <p><a href="#" id="prevBtn"><img src="images/png_prev.png" alt="왼쪽화살표"></a></p>
-      <p><a href="#" id="nextBtn"><img src="images/png_next.png" alt="오른쪽화살표"></a></p>
+                        <p><a href="#" id="prevBtn"><img src="images/png_prev.png" alt="왼쪽화살표"></a></p>
+                        <p><a href="#" id="nextBtn"><img src="images/png_next.png" alt="오른쪽화살표"></a></p>
                     </div>
                     <!-- <div class="up_set">
                         <div class="up">
@@ -430,4 +433,6 @@
             </div>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>
